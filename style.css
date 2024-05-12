@@ -1,10 +1,12 @@
 body{
   background-color: rgb(32, 32, 32);
   color : white;
-  font-family: 'Pokemon Solid';
+  font-family: "Gill Sans", sans-serif;
   font-weight:normal;
+}
 
-
+.main{
+  position: relative;
 }
 
 .container{
@@ -12,6 +14,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .row{
@@ -38,8 +41,8 @@ body{
   align-items: center;
   padding: 1.5em;
   background-color: rgb(162, 36, 36);
-  border-top-left-radius : 50px;
   border-top-right-radius : 50px;
+  border-top-left-radius : 50px;
   box-shadow: 2px 5px 5px black;
 }
 
@@ -60,10 +63,148 @@ body{
 }
 
 .bottomCard{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 1.5em;
   color : black;
   border-bottom-left-radius : 50px;
   border-bottom-right-radius : 50px;
   background-color: white;
   box-shadow: 2px 5px 5px black;
+}
+
+.popupBtn{
+  border-radius: 60px;
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color : black;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em;
+
+  cursor: pointer;
+}
+
+.popupBtn:hover{
+  background-color: black;
+  color: white;
+}
+
+.popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.popupContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupCard{
+  width: 50%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 20px;
+  color: black;
+  padding: 2%;
+}
+
+.popupPkmn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popupPkmn img{
+  width: 10em;
+  border: 4px solid black;
+  border-radius: 200px;
+  box-shadow: 2px 5px 5px black;
+  padding: 2em;
+}
+
+.popupTC{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.popupType{
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 20px;
+  justify-content: space-around;
+  padding: 0.5em;
+  box-shadow: 2px 5px 5px black;
+}
+
+.popupType p{
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+.popupSx2{
+  display: flex;
+  justify-content: center;
+}
+
+.popupStats, .popupInfo, .popupSkill{
+  border : 2px solid black;
+  padding: 2em;
+  border-radius: 20px;
+  font-size: 1em;
+  width: 10em;
+  box-shadow: 2px 5px 5px black;
+}
+
+.popupInfo{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.closeBtn{
+  color: white;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  cursor: pointer;
+}
+
+.closeBtn:hover{
+  background-color: white;
+  color:black;
+}
+
+
+.pkmName{
+    font-family: 'Pokemon Solid';
+}
+
+.popupPkmn .pkmName{
+  font-size: 3em;
 }
