@@ -1,6 +1,7 @@
 let inject = document.getElementById('inject')
 let popupInject = document.getElementById('popupInject')
 
+//Afficher POPUP
 
 function popup(id){
 
@@ -80,12 +81,14 @@ function popup(id){
 
 }
 
+//Fermer Popup
+
 function closePopup(){
   popupInject.style.display = "none";
 }
 
 
-
+//Afficher le shiny
 
 function shinyChange(id) {
 
@@ -108,6 +111,8 @@ function shinyChange(id) {
     });
 
 }
+
+//Afficher regular
 
 function shinyRevert(id) {
   let url = "https://tyradex.tech/api/v1/pokemon/" + id

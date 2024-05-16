@@ -113,14 +113,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .popupCard{
-  width: 50%;
+  width: 50em;
   background-color: rgb(236, 236, 236);
   border-radius: 20px;
   color: black;
   padding: 2%;
+  margin: 2em;
+  border : 2px solid black;
 }
 
 .popupPkmn{
@@ -140,8 +143,8 @@ body{
 .popupTC{
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .popupType{
@@ -167,9 +170,9 @@ body{
 
 .popupStats, .popupInfo, .popupSkill{
   border : 2px solid black;
-  padding: 2em;
+  padding: 1em;
   border-radius: 20px;
-  font-size: 1em;
+  font-size: 0.8em;
   width: 10em;
   box-shadow: 2px 5px 5px black;
 }
