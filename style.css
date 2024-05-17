@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(32, 32, 32);
+  background-image: url("https://static.tumblr.com/206626c61895edee696227a096ffbc3d/yn7vk7p/XB3mw4tbn/tumblr_static_grassfortowns.png");
   color : white;
   font-family: "Gill Sans", sans-serif;
   font-weight:normal;
@@ -26,74 +26,91 @@ body{
 }
 
 .card{
-  width: 15em;
+  width: 20em;
   background-color: transparent;
   margin-bottom: 2em;
 }
 
 .upCard, .bottomCard{
-  height: 5em;
+  height:7em;
+  border: 3px solid black;
 }
 
 .upCard{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 1.5em;
   background-color: rgb(162, 36, 36);
-  border-top-right-radius : 50px;
-  border-top-left-radius : 50px;
+  border-top-right-radius : 500px;
+  border-top-left-radius : 500px;
   box-shadow: 2px 5px 5px black;
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 5px solid black;
 }
 
 .upCard img{
-  width: 5em;
-  border: 4px solid white;
-  border-radius: 50px;
+  background-color: rgb(162, 36, 36);
+  width: 6em;
+  border: 3px solid white;
+  border-radius: 500px;
   box-shadow: 2px 5px 5px black;
+  transition: transform .2s;
+  margin-right : 2em;
+}
+
+.upCard img:hover{
+  transform : scale(2);
+  cursor: pointer;
 }
 
 .upCard p{
+  font-size: 1.3em;
   color : white;
-}
-
-.middleCard{
-  border-top: 10px solid black;
-    box-shadow: 2px 5px 5px black;
 }
 
 .bottomCard{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 1.5em;
+  padding-bottom: 2.5em;
+  padding-top: 0.5em;
   color : black;
-  border-bottom-left-radius : 50px;
-  border-bottom-right-radius : 50px;
+  border-bottom-left-radius : 500px;
+  border-bottom-right-radius : 500px;
   background-color: white;
   box-shadow: 2px 5px 5px black;
+  border-top: 5px solid black;
+
+
+  font-family: "Roboto";
 }
 
 .popupBtn{
-  border-radius: 60px;
-  border: 1px solid black;
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  color : black;
-  text-align: center;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7em;
+  margin-left: 2em;
 
+  border: 2px solid black;
+  background-color: transparent;
   cursor: pointer;
+
+  border-radius: 500px;
+  height: 3em;
+  width: 3em;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("plus.svg");
+  background-size: 3em;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .popupBtn:hover{
-  background-color: black;
-  color: white;
+  background-image: url("plusW.svg");
 }
 
 .popup{
@@ -105,6 +122,8 @@ body{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
+
+  font-family: "Roboto";
 }
 
 .popupContainer{
@@ -138,6 +157,9 @@ body{
   border-radius: 200px;
   box-shadow: 2px 5px 5px black;
   padding: 2em;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/528/528101.png");
+  background-position: center;
+  background-size: 15em;
 }
 
 .popupTC{
