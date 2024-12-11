@@ -5,7 +5,7 @@ let popupInject = document.getElementById('popupInject')
 
 function popup(id){
 
-  let url = "https://tyradex.tech/api/v1/pokemon/" + id
+  let url = "https://tyradex.vercel.app/api/v1/pokemon/" + id
 
   fetch(url)
   .then(response => {
@@ -81,7 +81,7 @@ function closePopup(){
 
 function shinyChange(id) {
 
-  let url = "https://tyradex.tech/api/v1/pokemon/" + id
+  let url = "https://tyradex.vercel.app/api/v1/pokemon/" + id
 
   fetch(url)
   .then(response => {
@@ -104,7 +104,7 @@ function shinyChange(id) {
 //Afficher regular
 
 function shinyRevert(id) {
-  let url = "https://tyradex.tech/api/v1/pokemon/" + id
+  let url = "https://tyradex.vercel.app/api/v1/pokemon/" + id
 
   fetch(url)
   .then(response => {
@@ -126,7 +126,7 @@ function shinyRevert(id) {
 
 //PRINCIPAL -> CARDs
 
-fetch("https://tyradex.tech/api/v1/gen/1")
+fetch("https://tyradex.vercel.app/api/v1/gen/1")
 .then(response => {
   return response.json();
 })
